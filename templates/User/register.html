@@ -17,7 +17,7 @@
         }
 
         .container {
-            width: 350px;
+            width: 380px;
             background: white;
             padding: 25px;
             border-radius: 8px;
@@ -31,7 +31,7 @@
             font-weight: 600;
         }
 
-        input {
+        input, textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -40,10 +40,15 @@
             font-size: 14px;
         }
 
+        textarea {
+            resize: none;
+            height: 70px;
+        }
+
         button {
             width: 100%;
             padding: 10px;
-            background: #198754; /* Bootstrap green */
+            background: #198754;
             color: white;
             border: none;
             border-radius: 6px;
@@ -61,7 +66,6 @@
             color: #198754;
             font-size: 14px;
         }
-
     </style>
 </head>
 <body>
@@ -69,12 +73,20 @@
 <div class="container">
     <h2>Register</h2>
 
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
 
         <input type="text" name="username" placeholder="Enter Username" required>
-        <input type="file" name="email" placeholder="Enter Email" required>
+
         <input type="password" name="password" placeholder="Enter Password" required>
+
+        <input type="text" name="phone" placeholder="Enter Phone Number" required maxlength="10">
+
+        <textarea name="address" placeholder="Enter Address" required></textarea>
+
+        <input type="text" name="pincode" placeholder="Enter Pincode" required maxlength="6">
+
+        <input type="file" name="profile_image">
 
         <button type="submit">Register</button>
     </form>
