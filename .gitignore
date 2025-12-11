@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+env/
+
+# PyCharm
+.idea/
+
+# Django
+db.sqlite3
+*/migrations/*
+!*/migrations/__init__.py
+
+# Static cache
+staticfiles/
+
+# OS files
+.DS_Store
+Thumbs.db
