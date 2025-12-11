@@ -1,0 +1,36 @@
+
+
+        /* Simple CSS for BookEx Navbar */
+
+.navbar {
+  background-color: #f8f9fa; /* Light gray background */
+  border-bottom: 1px solid #dee2e6; /* Thin bottom border */
+  font-family: Arial, sans-serif; /* Clean, simple font */
+}
+
+.navbar-brand {
+  color: #000; /* Black text for brand */
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #555; /* Dark gray for links */
+  margin: 0 10px; /* Space between links */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Blue on hover */
+}
+
+.nav-link.active {
+  color: #007bff; /* Blue for active link */
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 4px; /* Slight rounding for input */
+}
+
+.btn-outline-success {
+  border-radius: 4px; /* Match button rounding */
+}
